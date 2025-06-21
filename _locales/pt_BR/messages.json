@@ -1,0 +1,44 @@
+{
+  "extension_name": {
+    "message": "AI Chat Blur"
+  },
+  "extension_description": {
+    "message": "Desfoca os títulos dos chats exibidos nas barras laterais das ferramentas de IA (ChatGPT, Gemini, Claude, Perplexity, DeepAI) para proteger sua privacidade"
+  },
+  "contextual_support": {
+    "message": "Suporte"
+  },
+  "contextual_issues": {
+    "message": "Problemas e sugestões"
+  },
+  "contextual_github": {
+    "message": "GitHub"
+  },
+  "contextual_report_issue": {
+    "message": "Reportar um problema"
+  },
+  "contextual_donate": {
+    "message": "Me pague uma pizza"
+  },
+  "contextual_review": {
+    "message": "Deixar uma avaliação"
+  },
+  "contextual_projects": {
+    "message": "Mais projetos"
+  },
+  "blur_intensity": {
+    "message": "Intensidade do desfoque (é necessário recarregar a página):"
+  },
+  "service_enabled": {
+    "message": "Ativado"
+  },
+  "service_disabled": {
+    "message": "Desativado"
+  },
+  "footer_by": {
+    "message": "Por"
+  },
+  "footer_more_infos": {
+    "message": "Mais informações"
+  }
+}

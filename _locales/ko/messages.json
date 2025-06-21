@@ -1,0 +1,44 @@
+{
+  "extension_name": {
+    "message": "AI Chat Blur"
+  },
+  "extension_description": {
+    "message": "개인정보 보호를 위해 AI 도구(ChatGPT, Gemini, Claude, Perplexity, DeepAI)의 사이드바에 표시되는 채팅 제목을 흐리게 합니다"
+  },
+  "contextual_support": {
+    "message": "지원"
+  },
+  "contextual_issues": {
+    "message": "문제 및 제안"
+  },
+  "contextual_github": {
+    "message": "GitHub"
+  },
+  "contextual_report_issue": {
+    "message": "문제 신고"
+  },
+  "contextual_donate": {
+    "message": "피자를 사주세요"
+  },
+  "contextual_review": {
+    "message": "리뷰 작성"
+  },
+  "contextual_projects": {
+    "message": "다른 프로젝트"
+  },
+  "blur_intensity": {
+    "message": "흐림 강도 (페이지 새로고침 필요):"
+  },
+  "service_enabled": {
+    "message": "사용 중"
+  },
+  "service_disabled": {
+    "message": "사용 안 함"
+  },
+  "footer_by": {
+    "message": "제작자"
+  },
+  "footer_more_infos": {
+    "message": "자세히 보기"
+  }
+}

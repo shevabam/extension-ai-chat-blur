@@ -1,0 +1,45 @@
+{
+    "extension_name": {
+      "message": "AI Chat Blur"
+    },
+    "extension_description": {
+      "message": "Floute les titres des conversations dans ChatGPT, Gemini, Claude, Perplexity et DeepAI pour plus de confidentialité"
+    },
+    "contextual_support": {
+      "message": "Support"
+    },
+    "contextual_issues": {
+      "message": "Problèmes et suggestions"
+    },
+    "contextual_github": {
+      "message": "GitHub"
+    },
+    "contextual_report_issue": {
+      "message": "Signaler un problème"
+    },
+    "contextual_donate": {
+      "message": "Faire un don"
+    },
+    "contextual_review": {
+      "message": "Laisser un avis"
+    },
+    "contextual_projects": {
+      "message": "Tous mes projets"
+    },
+    "blur_intensity": {
+      "message": "Intensité du flou (besoin de rafraîchir la page) :"
+    },
+    "service_enabled": {
+      "message": "Activé"
+    },
+    "service_disabled": {
+      "message": "Désactivé"
+    },
+    "footer_by": {
+      "message": "Par"
+    },
+    "footer_more_infos": {
+      "message": "Plus d'infos"
+    }
+  }
+  

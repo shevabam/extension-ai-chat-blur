@@ -1,0 +1,44 @@
+{
+  "extension_name": {
+    "message": "AI Chat Blur"
+  },
+  "extension_description": {
+    "message": "プライバシー保護のため、AIツール（ChatGPT、Gemini、Claude、Perplexity、DeepAI）のサイドバーに表示されるチャットタイトルをぼかします"
+  },
+  "contextual_support": {
+    "message": "サポート"
+  },
+  "contextual_issues": {
+    "message": "問題と提案"
+  },
+  "contextual_github": {
+    "message": "GitHub"
+  },
+  "contextual_report_issue": {
+    "message": "問題を報告"
+  },
+  "contextual_donate": {
+    "message": "ピザをごちそうして"
+  },
+  "contextual_review": {
+    "message": "レビューを書く"
+  },
+  "contextual_projects": {
+    "message": "他のプロジェクト"
+  },
+  "blur_intensity": {
+    "message": "ぼかしの強さ（ページの再読み込みが必要です）:"
+  },
+  "service_enabled": {
+    "message": "有効"
+  },
+  "service_disabled": {
+    "message": "無効"
+  },
+  "footer_by": {
+    "message": "作成者"
+  },
+  "footer_more_infos": {
+    "message": "詳細情報"
+  }
+}

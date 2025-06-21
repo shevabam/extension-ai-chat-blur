@@ -1,0 +1,44 @@
+{
+  "extension_name": {
+    "message": "AI Chat Blur"
+  },
+  "extension_description": {
+    "message": "Rozmywa tytuły czatów wyświetlane na paskach bocznych narzędzi AI (ChatGPT, Gemini, Claude, Perplexity, DeepAI) w celu ochrony prywatności"
+  },
+  "contextual_support": {
+    "message": "Wsparcie"
+  },
+  "contextual_issues": {
+    "message": "Problemy i sugestie"
+  },
+  "contextual_github": {
+    "message": "GitHub"
+  },
+  "contextual_report_issue": {
+    "message": "Zgłoś problem"
+  },
+  "contextual_donate": {
+    "message": "Postaw mi pizzę"
+  },
+  "contextual_review": {
+    "message": "Zostaw opinię"
+  },
+  "contextual_projects": {
+    "message": "Więcej projektów"
+  },
+  "blur_intensity": {
+    "message": "Poziom rozmycia (wymagane odświeżenie strony):"
+  },
+  "service_enabled": {
+    "message": "Włączone"
+  },
+  "service_disabled": {
+    "message": "Wyłączone"
+  },
+  "footer_by": {
+    "message": "Autor:"
+  },
+  "footer_more_infos": {
+    "message": "Więcej informacji"
+  }
+}

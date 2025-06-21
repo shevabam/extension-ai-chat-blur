@@ -1,0 +1,44 @@
+{
+  "extension_name": {
+    "message": "AI Chat Blur"
+  },
+  "extension_description": {
+    "message": "为保护隐私，模糊显示在 AI 工具（ChatGPT、Gemini、Claude、Perplexity、DeepAI）侧边栏中的聊天标题"
+  },
+  "contextual_support": {
+    "message": "支持"
+  },
+  "contextual_issues": {
+    "message": "问题与建议"
+  },
+  "contextual_github": {
+    "message": "GitHub"
+  },
+  "contextual_report_issue": {
+    "message": "报告问题"
+  },
+  "contextual_donate": {
+    "message": "请我吃披萨"
+  },
+  "contextual_review": {
+    "message": "留下评价"
+  },
+  "contextual_projects": {
+    "message": "更多项目"
+  },
+  "blur_intensity": {
+    "message": "模糊强度（需要刷新页面）："
+  },
+  "service_enabled": {
+    "message": "已启用"
+  },
+  "service_disabled": {
+    "message": "已禁用"
+  },
+  "footer_by": {
+    "message": "作者"
+  },
+  "footer_more_infos": {
+    "message": "更多信息"
+  }
+}

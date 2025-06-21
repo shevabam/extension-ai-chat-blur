@@ -1,0 +1,44 @@
+{
+  "extension_name": {
+    "message": "AI Chat Blur"
+  },
+  "extension_description": {
+    "message": "Difumina los títulos de los chats mostrados en las barras laterales de herramientas de IA (ChatGPT, Gemini, Claude, Perplexity, DeepAI) para proteger tu privacidad"
+  },
+  "contextual_support": {
+    "message": "Soporte"
+  },
+  "contextual_issues": {
+    "message": "Problemas y sugerencias"
+  },
+  "contextual_github": {
+    "message": "GitHub"
+  },
+  "contextual_report_issue": {
+    "message": "Reportar un problema"
+  },
+  "contextual_donate": {
+    "message": "Cómprame una pizza"
+  },
+  "contextual_review": {
+    "message": "Dejar una reseña"
+  },
+  "contextual_projects": {
+    "message": "Más proyectos"
+  },
+  "blur_intensity": {
+    "message": "Intensidad del difuminado (necesita recargar la página):"
+  },
+  "service_enabled": {
+    "message": "Activado"
+  },
+  "service_disabled": {
+    "message": "Desactivado"
+  },
+  "footer_by": {
+    "message": "Por"
+  },
+  "footer_more_infos": {
+    "message": "Más información"
+  }
+}

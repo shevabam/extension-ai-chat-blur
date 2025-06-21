@@ -1,0 +1,44 @@
+{
+  "extension_name": {
+    "message": "AI Chat Blur"
+  },
+  "extension_description": {
+    "message": "Verschleiert die Chattitel in den Seitenleisten von KI-Tools (ChatGPT, Gemini, Claude, Perplexity, DeepAI) zum Schutz der Privatsphäre"
+  },
+  "contextual_support": {
+    "message": "Support"
+  },
+  "contextual_issues": {
+    "message": "Probleme und Vorschläge"
+  },
+  "contextual_github": {
+    "message": "GitHub"
+  },
+  "contextual_report_issue": {
+    "message": "Ein Problem melden"
+  },
+  "contextual_donate": {
+    "message": "Spendiere mir eine Pizza"
+  },
+  "contextual_review": {
+    "message": "Bewertung hinterlassen"
+  },
+  "contextual_projects": {
+    "message": "Weitere Projekte"
+  },
+  "blur_intensity": {
+    "message": "Unschärfe-Intensität (Seite neu laden erforderlich):"
+  },
+  "service_enabled": {
+    "message": "Aktiviert"
+  },
+  "service_disabled": {
+    "message": "Deaktiviert"
+  },
+  "footer_by": {
+    "message": "Von"
+  },
+  "footer_more_infos": {
+    "message": "Weitere Informationen"
+  }
+}

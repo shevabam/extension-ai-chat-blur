@@ -1,0 +1,45 @@
+{
+    "extension_name": {
+      "message": "AI Chat Blur"
+    },
+    "extension_description": {
+      "message": "Blur chat titles displayed in the sidebars of AI platforms (ChatGPT, Gemini, Claude, Perplexity, DeepAI) for privacy"
+    },
+    "contextual_support": {
+      "message": "Support"
+    },
+    "contextual_issues": {
+      "message": "Issues and Suggestions"
+    },
+    "contextual_github": {
+      "message": "GitHub"
+    },
+    "contextual_report_issue": {
+      "message": "Report an issue"
+    },
+    "contextual_donate": {
+      "message": "Buy me a pizza"
+    },
+    "contextual_review": {
+      "message": "Leave a review"
+    },
+    "contextual_projects": {
+      "message": "More projects"
+    },
+    "blur_intensity": {
+      "message": "Blur intensity (need to refresh page):"
+    },
+    "service_enabled": {
+      "message": "Enabled"
+    },
+    "service_disabled": {
+      "message": "Disabled"
+    },
+    "footer_by": {
+      "message": "By"
+    },
+    "footer_more_infos": {
+      "message": "More infos"
+    }
+  }
+  

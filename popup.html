@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Chat Blur</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <h1>AI Chat Blur</h1>
+    <div class="service-toggle">
+      <label>
+        <input type="checkbox" id="toggle-chatgpt" class="toggle-switch"><span class="slider"></span>
+        <span class="service-name">ChatGPT</span>
+      </label>
+      <span class="status" id="status-chatgpt"></span>
+    </div>
+    <div class="service-toggle">
+      <label>
+        <input type="checkbox" id="toggle-gemini" class="toggle-switch"><span class="slider"></span>
+        <span class="service-name">Gemini</span>
+      </label>
+      <span class="status" id="status-gemini"></span>
+    </div>
+    <div class="service-toggle">
+      <label>
+        <input type="checkbox" id="toggle-claude" class="toggle-switch"><span class="slider"></span>
+        <span class="service-name">Claude</span>
+      </label>
+      <span class="status" id="status-claude"></span>
+    </div>
+    <div class="service-toggle">
+      <label>
+        <input type="checkbox" id="toggle-perplexity" class="toggle-switch"><span class="slider"></span>
+        <span class="service-name">Perplexity</span>
+      </label>
+      <span class="status" id="status-perplexity"></span>
+    </div>
+    <div class="service-toggle">
+      <label>
+        <input type="checkbox" id="toggle-deepai" class="toggle-switch"><span class="slider"></span>
+        <span class="service-name">DeepAI</span>
+      </label>
+      <span class="status" id="status-deepai"></span>
+    </div>
+
+    <div class="blur-slider">
+      <label for="blur-range" class="blur-label">__MSG_blur_intensity__</label>
+      <div class="blur-range-row">
+        <input type="range" id="blur-range" min="2" max="15" step="1">
+        <span id="blur-value"></span> px
+      </div>
+    </div>
+    <footer>__MSG_footer_by__ <a href="https://shevarezo.fr" target="_blank">shevabam</a> <span class="bullet">•</span> <a href="https://github.com/shevabam/extension-ai-chat-blur" target="_blank">__MSG_footer_more_infos__</a></footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
