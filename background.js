@@ -81,7 +81,7 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
       chrome.tabs.create({ url: `https://chromewebstore.google.com/detail/${chrome.runtime.id}/reviews` });
       break;
     case "projects":
-      chrome.tabs.create({ url: `https://shevarezo.fr` });
+      chrome.tabs.create({ url: `https://shevabam.fr` });
       break;
   }
 });

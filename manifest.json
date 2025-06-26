@@ -3,7 +3,7 @@
   "name": "__MSG_extension_name__",
   "description": "__MSG_extension_description__",
   "default_locale": "en",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "@shevabam",
   "homepage_url": "https://github.com/shevabam/extension-ai-chat-blur",
   "permissions": [

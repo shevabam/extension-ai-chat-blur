@@ -62,5 +62,3 @@ Created by [@shevabam](https://github.com/shevabam)
 - [X](https://x.com/shevabam)
 - [Bluesky](https://bsky.app/profile/shevabam.bsky.social)
 - [Mastodon](https://mastodon.social/web/@shevabam)
-- [Blog](https://blog.shevarezo.fr)
-
