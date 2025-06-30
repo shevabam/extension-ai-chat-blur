@@ -23,7 +23,7 @@
 
 ## Installation
 
-Download the extension from the [**Chrome Web Store**](https://chromewebstore.google.com/detail/ai-chat-blur/cemfhmnfgpcknjmbjabcobjhcfmipdki) or [**Microsoft Edge Store**]()
+Download the extension from the [**Chrome Web Store**](https://chromewebstore.google.com/detail/ai-chat-blur/cemfhmnfgpcknjmbjabcobjhcfmipdki) or [**Microsoft Edge Store**](https://microsoftedge.microsoft.com/addons/detail/ai-chat-blur/ffoamhgbmchkgdlcekenacdhkllnbmgg)
 
 After installing the extension, pin it to your browser:
 
