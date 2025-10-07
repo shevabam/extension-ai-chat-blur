@@ -1,8 +1,8 @@
 const SERVICES = {
     chatgpt: {
         matcher: () => location.hostname.includes('chat.openai.com') || location.hostname.includes('chatgpt.com'),
-        getItems: () => document.querySelectorAll('#history aside a'),
-        getContainer: () => document.querySelector('#history aside'),
+        getItems: () => document.querySelectorAll('nav div[class^="group/sidebar"] a[class^="group __menu-item"]'),
+        getContainer: () => document.querySelector('nav div[class^="group/sidebar"]'),
     },
     gemini: {
         matcher: () => location.hostname.includes('gemini.google.com'),
