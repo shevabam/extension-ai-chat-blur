@@ -6,8 +6,8 @@ const SERVICES = {
     },
     gemini: {
         matcher: () => location.hostname.includes('gemini.google.com'),
-        getItems: () => document.querySelectorAll('.conversation-items-container'),
-        getContainer: () => document.querySelector('.conversation-items-container')?.parentElement,
+        getItems: () => document.querySelectorAll('gem-nav-list-item[data-test-id="conversation"]'),
+        getContainer: () => document.querySelector('mat-nav-list[gem-sidenav-list]'),
     },
     claude: {
         matcher: () => location.hostname.includes('claude.ai'),
