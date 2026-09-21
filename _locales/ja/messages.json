@@ -29,6 +29,9 @@
   "blur_intensity": {
     "message": "ぼかしの強さ（ページの再読み込みが必要です）:"
   },
+  "hover_reveal_label": {
+    "message": "ホバーで表示"
+  },
   "service_enabled": {
     "message": "有効"
   },

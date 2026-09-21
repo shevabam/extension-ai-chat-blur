@@ -29,6 +29,9 @@
     "blur_intensity": {
       "message": "Blur intensity (need to refresh page):"
     },
+    "hover_reveal_label": {
+      "message": "Reveal on hover"
+    },
     "service_enabled": {
       "message": "Enabled"
     },

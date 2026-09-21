@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         1: chrome.i18n.getMessage("service_enabled")
     }
 
+    const hoverRevealToggle = document.getElementById('toggle-hover-reveal');
+
     // Load preferences
     chrome.storage.sync.get(['aiChatBlur'], (result) => {
         const prefs = result.aiChatBlur || {};
@@ -27,6 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
             toggles[key].checked = !!prefs[key];
             statuses[key].textContent = labels[+toggles[key].checked];
         });
+
+        hoverRevealToggle.checked = !!prefs.hoverReveal;
 
         // Blur gauge
         const blurRange = document.getElementById('blur-range');
@@ -73,6 +77,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     statuses[key].textContent = labels[+toggles[key].checked];
                 });
             });
+        });
+    });
+
+    hoverRevealToggle.addEventListener('change', () => {
+        chrome.storage.sync.get(['aiChatBlur'], (result) => {
+            const prefs = result.aiChatBlur || {};
+            prefs.hoverReveal = hoverRevealToggle.checked;
+            chrome.storage.sync.set({ aiChatBlur: prefs });
         });
     });
 

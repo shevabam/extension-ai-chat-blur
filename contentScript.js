@@ -11,10 +11,10 @@ const SERVICES = {
     },
     claude: {
         matcher: () => location.hostname.includes('claude.ai'),
-        getItems: () => document.querySelectorAll('ul li a[href^="/chat/"]'),
+        getItems: () => document.querySelectorAll('div[data-row-key^="chat:"] a[href^="/chat/"]'),
         getContainer: () => {
-            const first = document.querySelector('ul li a[href^="/chat/"]');
-            return first ? first.closest('ul') : null;
+            const first = document.querySelector('div[data-row-key^="chat:"] a[href^="/chat/"]');
+            return first ? first.closest('div[data-row-key^="chat:"]')?.parentElement : null;
         }
     },
     deepai: {
@@ -40,15 +40,34 @@ function getServiceItems(service) {
     return SERVICES[service]?.getItems() || [];
 }
 
-function applyBlur(enable, service, blurAmount) {
+const BLUR_STYLE_ID = 'ai-chat-blur-style';
+const BLUR_CLASS = 'ai-chat-blur-item';
+const HOVER_REVEAL_CLASS = 'ai-chat-blur-hover-reveal';
+
+// Injecte une seule fois la feuille de style qui gère le flou et le hover-to-reveal en CSS pur
+function ensureBlurStylesheet() {
+    if (document.getElementById(BLUR_STYLE_ID)) return;
+    const style = document.createElement('style');
+    style.id = BLUR_STYLE_ID;
+    style.textContent = `
+        .${BLUR_CLASS} { filter: blur(var(--ai-chat-blur-amount, 5px)); transition: filter 0.3s; }
+        .${BLUR_CLASS}.${HOVER_REVEAL_CLASS}:hover { filter: none; }
+    `;
+    document.head.appendChild(style);
+}
+
+function applyBlur(enable, service, blurAmount, hoverReveal) {
     const items = getServiceItems(service);
     const blur = typeof blurAmount === 'number' ? blurAmount : 5;
     items.forEach(el => {
         if (enable) {
-            el.style.filter = `blur(${blur}px)`;
-            el.style.transition = 'filter 0.3s';
+            ensureBlurStylesheet();
+            el.style.setProperty('--ai-chat-blur-amount', `${blur}px`);
+            el.classList.add(BLUR_CLASS);
+            el.classList.toggle(HOVER_REVEAL_CLASS, !!hoverReveal);
         } else {
-            el.style.filter = '';
+            el.classList.remove(BLUR_CLASS, HOVER_REVEAL_CLASS);
+            el.style.removeProperty('--ai-chat-blur-amount');
         }
     });
 }
@@ -57,7 +76,7 @@ function applyBlur(enable, service, blurAmount) {
 function applyBlurFromStorage(service) {
     chrome.storage.sync.get(['aiChatBlur'], (result) => {
         const prefs = result.aiChatBlur || {};
-        applyBlur(!!prefs[service], service, prefs.blurAmount);
+        applyBlur(!!prefs[service], service, prefs.blurAmount, prefs.hoverReveal);
     });
 }
 
@@ -92,7 +111,7 @@ function observeItems(container, service) {
             if (enabled !== lastBlurState) {
                 lastBlurState = enabled;
             }
-            applyBlur(enabled, service, prefs.blurAmount);
+            applyBlur(enabled, service, prefs.blurAmount, prefs.hoverReveal);
         });
     });
     observer.observe(container, { childList: true, subtree: true });
@@ -100,7 +119,7 @@ function observeItems(container, service) {
     // Applique le flou immédiatement (pour les éléments déjà présents ou qui arrivent après un court délai)
     chrome.storage.sync.get(['aiChatBlur'], (result) => {
         const prefs = result.aiChatBlur || {};
-        applyBlur(!!prefs[service], service);
+        applyBlur(!!prefs[service], service, prefs.blurAmount, prefs.hoverReveal);
     });
 }
 
@@ -116,7 +135,7 @@ chrome.storage.onChanged.addListener((changes, area) => {
         const service = getActiveService();
         if (!service) return;
         const prefs = changes.aiChatBlur.newValue || {};
-        applyBlur(!!prefs[service], service);
+        applyBlur(!!prefs[service], service, prefs.blurAmount, prefs.hoverReveal);
     }
 });
 

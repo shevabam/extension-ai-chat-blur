@@ -29,6 +29,9 @@
   "blur_intensity": {
     "message": "Intensidad del difuminado (necesita recargar la página):"
   },
+  "hover_reveal_label": {
+    "message": "Mostrar al pasar el cursor"
+  },
   "service_enabled": {
     "message": "Activado"
   },
