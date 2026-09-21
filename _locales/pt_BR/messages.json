@@ -29,6 +29,9 @@
   "blur_intensity": {
     "message": "Intensidade do desfoque (é necessário recarregar a página):"
   },
+  "hover_reveal_label": {
+    "message": "Mostrar ao passar o mouse"
+  },
   "service_enabled": {
     "message": "Ativado"
   },

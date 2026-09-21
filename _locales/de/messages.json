@@ -29,6 +29,9 @@
   "blur_intensity": {
     "message": "Unschärfe-Intensität (Seite neu laden erforderlich):"
   },
+  "hover_reveal_label": {
+    "message": "Beim Hover anzeigen"
+  },
   "service_enabled": {
     "message": "Aktiviert"
   },

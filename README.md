@@ -9,6 +9,7 @@
 - **Blur Chat Titles**: instantly blur the chat history on ChatGPT, Gemini, Claude, Perplexity, and DeepAI
 - **Per-Service Enable/Disable**: toggle the blur effect for each supported service individually
 - **Customizable Blur Strength**: adjust the blur intensity (2–15px) with a sleek slider in the popup
+- **Reveal on Hover**: temporarily unblur a chat title by hovering over it, without disabling the blur
 - **Persistent Preferences**: All settings are saved and synchronized across Chrome browsers using your Google account
 
 ![](docs/ext2.jpg)
@@ -34,6 +35,7 @@ After installing the extension, pin it to your browser:
 
 - Service Toggles: enable or disable blur for each supported platform **(ChatGPT, Gemini, Claude, Perplexity, DeepAI)**
 - Blur Intensity: choose the blur level (2–15px) using the slider. Changing this may require a page refresh to fully apply
+- Reveal on Hover: enable this option to instantly and temporarily unblur a chat title when you hover over it with your mouse
 - All settings are saved automatically and synced across Chrome if you are logged in
 
 ![](docs/ext3.png)

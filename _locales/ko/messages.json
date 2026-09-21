@@ -29,6 +29,9 @@
   "blur_intensity": {
     "message": "흐림 강도 (페이지 새로고침 필요):"
   },
+  "hover_reveal_label": {
+    "message": "호버 시 표시"
+  },
   "service_enabled": {
     "message": "사용 중"
   },

@@ -29,6 +29,9 @@
     "blur_intensity": {
       "message": "Intensité du flou (besoin de rafraîchir la page) :"
     },
+    "hover_reveal_label": {
+      "message": "Afficher au survol"
+    },
     "service_enabled": {
       "message": "Activé"
     },

@@ -29,6 +29,9 @@
   "blur_intensity": {
     "message": "Poziom rozmycia (wymagane odświeżenie strony):"
   },
+  "hover_reveal_label": {
+    "message": "Pokaż po najechaniu"
+  },
   "service_enabled": {
     "message": "Włączone"
   },

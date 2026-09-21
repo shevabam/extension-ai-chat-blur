@@ -29,6 +29,9 @@
   "blur_intensity": {
     "message": "Intensità della sfocatura (necessario ricaricare la pagina):"
   },
+  "hover_reveal_label": {
+    "message": "Mostra al passaggio del mouse"
+  },
   "service_enabled": {
     "message": "Attivato"
   },

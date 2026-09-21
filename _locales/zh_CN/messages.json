@@ -29,6 +29,9 @@
   "blur_intensity": {
     "message": "模糊强度（需要刷新页面）："
   },
+  "hover_reveal_label": {
+    "message": "悬停时显示"
+  },
   "service_enabled": {
     "message": "已启用"
   },
