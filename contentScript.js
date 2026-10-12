@@ -1,8 +1,8 @@
 const SERVICES = {
     chatgpt: {
         matcher: () => location.hostname.includes('chat.openai.com') || location.hostname.includes('chatgpt.com'),
-        getItems: () => document.querySelectorAll('nav div[class^="group/sidebar"] a[class^="group __menu-item"]'),
-        getContainer: () => document.querySelector('nav div[class^="group/sidebar"]'),
+        getItems: () => document.querySelectorAll('nav .contents div[class~="group/nav-section"] div[class~="group/nav-list"] a[href^="/c/"]'),
+        getContainer: () => document.querySelector('nav .contents div[class~="group/nav-section"] div[class~="group/nav-list"]'),
     },
     gemini: {
         matcher: () => location.hostname.includes('gemini.google.com'),
@@ -24,8 +24,13 @@ const SERVICES = {
     },
     perplexity: {
         matcher: () => location.hostname.includes('perplexity.ai'),
-        getItems: () => document.querySelectorAll('.group\\/history a[href^="/search/"]'),
-        getContainer: () => document.querySelector('.group\\/history'),
+        getItems: () => document.querySelectorAll('div[data-sidebar-session-row]:has(a[href^="/search/"]) div.whitespace-nowrap'),
+        hoverScope: 'div[data-sidebar-session-row]',
+        getContainer: () => {
+            const first = document.querySelector('div[data-sidebar-session-row] a[href^="/search/"]');
+            const group = first?.closest('[role="group"]');
+            return group?.parentElement || group || null;
+        },
     }
 };
 
@@ -51,7 +56,8 @@ function ensureBlurStylesheet() {
     style.id = BLUR_STYLE_ID;
     style.textContent = `
         .${BLUR_CLASS} { filter: blur(var(--ai-chat-blur-amount, 5px)); transition: filter 0.3s; }
-        .${BLUR_CLASS}.${HOVER_REVEAL_CLASS}:hover { filter: none; }
+        .${HOVER_REVEAL_CLASS}:hover.${BLUR_CLASS},
+        .${HOVER_REVEAL_CLASS}:hover .${BLUR_CLASS} { filter: none; }
     `;
     document.head.appendChild(style);
 }
@@ -59,14 +65,17 @@ function ensureBlurStylesheet() {
 function applyBlur(enable, service, blurAmount, hoverReveal) {
     const items = getServiceItems(service);
     const blur = typeof blurAmount === 'number' ? blurAmount : 5;
+    const scopeSelector = SERVICES[service]?.hoverScope;
     items.forEach(el => {
+        const scope = (scopeSelector && el.closest(scopeSelector)) || el;
         if (enable) {
             ensureBlurStylesheet();
             el.style.setProperty('--ai-chat-blur-amount', `${blur}px`);
             el.classList.add(BLUR_CLASS);
-            el.classList.toggle(HOVER_REVEAL_CLASS, !!hoverReveal);
+            scope.classList.toggle(HOVER_REVEAL_CLASS, !!hoverReveal);
         } else {
-            el.classList.remove(BLUR_CLASS, HOVER_REVEAL_CLASS);
+            el.classList.remove(BLUR_CLASS);
+            scope.classList.remove(HOVER_REVEAL_CLASS);
             el.style.removeProperty('--ai-chat-blur-amount');
         }
     });
